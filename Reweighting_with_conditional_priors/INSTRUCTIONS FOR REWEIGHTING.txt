@@ -1,1 +1,3 @@
 The Raw Table containting the Tabulated Priors are in /THEORY/USERS/swetha.bhagwat/Conditional_Prior_reweighting/Tabulated_Conditional_Priors/ on Vera. 
+
+Run format_to_cvs.py
