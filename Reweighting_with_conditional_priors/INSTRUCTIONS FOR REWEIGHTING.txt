@@ -1,3 +1,12 @@
 The Raw Table containting the Tabulated Priors are in /THEORY/USERS/swetha.bhagwat/Conditional_Prior_reweighting/Tabulated_Conditional_Priors/ on Vera. 
 
-Run format_to_cvs.py
+#1take the numerical prior and write it into the cvs format. 
+Run format_to_cvs.py converts the csv file of look up table 
+
+#2Read the sample of m1,m2,a1,a2 from the posterior distibution: Input postrerior distibution, output the list of m1,m2,a1,a2 (../Conditional_Prior_reweighting/gw170818/LIGO_prior/LIGOprior_gw170818_sample_point.csv)
+THEORY/swetha.bhagwat/Conditional_Prior_reweighting/
+
+LIGOprior_gw170818_sample_point.csv then remove the # in front of the mass1, mass2, a1,a2
+
+#3Next run generate_weights.py that generates the weights corresponding to the samples in the 
+LIGOprior_gw170818_sample_point.csv and looks up file in 1. 
