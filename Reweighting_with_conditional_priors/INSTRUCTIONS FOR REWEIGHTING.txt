@@ -10,3 +10,8 @@ LIGOprior_gw170818_sample_point.csv then remove the # in front of the mass1, mas
 
 #3Next run generate_weights.py that generates the weights corresponding to the samples in the 
 LIGOprior_gw170818_sample_point.csv and looks up file in 1. 
+
+#Then open an ipython notebook by 
+jupyter notebook --port 9000 --no-browse on Vera along with ssh -N -f -L localhost:9000:localhost:9000 swetha.bhagwat@vera.roma1.infn.it
+ on your computer terminal. 
+
