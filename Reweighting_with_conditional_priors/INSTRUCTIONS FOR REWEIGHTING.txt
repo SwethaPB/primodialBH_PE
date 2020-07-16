@@ -1,9 +1,15 @@
+Useful notes:
+lsof -ti:9000 | xargs kill -9 to kill the socket before ssh -N -f -L localhost:9000:localhost:9000 swetha.bhagwat@vera.roma1.infn.it 
+When Vera acts up, kill -9 -1 is one cammand to all jobs that are launched
+
 The Raw Table containting the Tabulated Priors are in /THEORY/USERS/swetha.bhagwat/Conditional_Prior_reweighting/Tabulated_Conditional_Priors/ on Vera. 
 
 #1take the numerical prior and write it into the cvs format. 
 Run format_to_cvs.py converts the csv file of look up table 
 
-#2Read the sample of m1,m2,a1,a2 from the posterior distibution: Input postrerior distibution, output the list of m1,m2,a1,a2 (../Conditional_Prior_reweighting/gw170818/LIGO_prior/LIGOprior_gw170818_sample_point.csv)
+#2Read the sample of m1,m2,a1,a2 from the posterior distibution: Input postrerior distibution, output the list of m1,m2,a1,a2  using the ipython file named read_sample_point.ipynb
+
+(../Conditional_Prior_reweighting/gw170818/LIGO_prior/LIGOprior_gw170818_sample_point.csv)
 THEORY/swetha.bhagwat/Conditional_Prior_reweighting/
 
 LIGOprior_gw170818_sample_point.csv then remove the # in front of the mass1, mass2, a1,a2
